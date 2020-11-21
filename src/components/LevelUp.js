@@ -12,10 +12,10 @@ export const LevelUp = () => (
                 return <>
                     <Route render={NavBar} />
                     <Route render={props => <ApplicationViews {...props} />} />
-                </>
+                </>  
             } else {
                 return <Redirect to="/login" />
-            }
+            }         
         }} />
 
         <Route path="/login" render={Login} />
