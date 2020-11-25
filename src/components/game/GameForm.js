@@ -118,6 +118,7 @@ export const GameForm = props => {
         
         // send POST request to your API
         createGame(game)
+          .then(props.history.push({pathname: "/"}))
       }}
       className="btn btn-primary">Create</button>
     </form>
